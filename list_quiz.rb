@@ -33,3 +33,22 @@ end
 
 # print bigger_two([1, 2], [3, 4]) # [3, 4]
 # print bigger_two([1, 7], [4, 4]) # [1, 7]
+
+def series_up(num)
+    n = 0
+    list = []
+    list[(num * (num + 1) / 2) - 1] = num
+    list.each do |pat|
+        t = 0
+        list.each do |numb|
+            
+            t += 1
+        end
+    end
+    return list
+end
+
+print series_up(1) # [1]
+print series_up(2) # [1, 1, 2]
+print series_up(3) # [1, 1, 2, 1, 2, 3]
+print series_up(4) # [1, 1, 2, 1, 2, 3, 1, 2, 3, 4]
